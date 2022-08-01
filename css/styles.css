@@ -1,0 +1,64 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    background-color: aliceblue;
+    padding: ;
+
+}
+
+
+h1, h2 {
+    font-family: 'Bebas Neue', cursive;
+}
+
+ul {
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+li {
+
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+}
+
+
+img {
+    max-width: 90%;
+
+}
+
+
+
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+
+   
+
+
+
+
+}
+
+@media (min-width: 1025px) {
+
+    
+}
