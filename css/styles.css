@@ -160,6 +160,27 @@ h3 {
     display: none;
 }
 
+.skills-list li {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    border: solid rgb(174, 202, 182) 2px;
+    background-color: rgb(174, 202, 182);
+    margin-bottom: 5px;
+}
+
+.skills-list {
+    padding: 15px;
+
+}
+
+.skills {
+    padding-bottom: 2rem;    
+
+}
+
+
+
 
 
 
@@ -237,6 +258,24 @@ h3 {
         flex: 0;
         margin: 0;
     }
+
+    .skills {
+        width: 90%;
+
+    }
+
+    .skills-list {
+    margin: auto;
+    width: 75%;
+    justify-content: space-between;
+    }
+
+    .skills-list li{
+        margin: 0;
+        flex-basis: 5em;
+        
+        }
+
 }
 
 
@@ -289,6 +328,18 @@ h3 {
         padding-bottom: 2rem;
         justify-content: space-around;
         margin: auto;
+    }
+
+    .skills-list {
+        width: 100%;
+
+    }
+
+    .skills-list li{
+        flex-wrap: wrap;
+        flex-basis: 9em;
+
+
     }
 
 }
