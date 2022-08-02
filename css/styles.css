@@ -13,12 +13,12 @@
 body {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-    width: 95vw;
+    width: 95%;
     margin: 0;
     padding: 0;
     align-content: stretch;
     flex-wrap: wrap;
-    width: 100vw;
+    width: 100%;
 
 
 }
@@ -71,7 +71,7 @@ a {
 }
 
 p {
-    width: 80vw;
+    width: 80%;
     font-size: 1em;
     hyphens: auto;
     padding-bottom: 3rem;
@@ -139,7 +139,7 @@ h3 {
     display: flex;
     flex-direction: column;
     margin: 0px;
-    width: 100vw;
+    width: 100%;
 
 }
 
@@ -209,7 +209,7 @@ h3 {
         flex: 1;
         flex-direction: row-reverse;
         margin: auto;
-        width: 95vw;        
+        width: 95%;        
     }
     .bio p {
         width: 50%;
