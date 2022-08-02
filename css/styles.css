@@ -2,29 +2,64 @@
   Base Element Styles
 ==================================== */
 
+* {
+    box-sizing: border-box;
+    line-height: 1.2em;
+    -webkit-font-smoothing: antialiased;
+
+}
+
+
 body {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-    background-color: aliceblue;
-    padding: ;
+    width: 95vw;
+    margin: 0;
+    padding: 0;
+    align-content: stretch;
+    flex-wrap: wrap;
+    width: 100vw;
+
 
 }
 
+h1 {
+    font-size: 3em;
+}
 
-h1, h2 {
+h2 {
+    font-size: 2em;
+
+}
+h1, h2, h3{
     font-family: 'Bebas Neue', cursive;
+    margin-bottom: .5rem;
+
 }
 
 ul {
-    background-color: whitesmoke;
+    
     display: flex;
-    align-items: center;
+    flex:100%;
+    flex-wrap: wrap;
+    align-items: stretch;
     flex-direction: column;
     justify-content: space-between;
+    list-style: none;
+    padding-inline-start: 16px;
+
     
 }
 
 li {
+    background-color: white;
+    border: solid 1px white;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 5px;
+    width: 95%;
+    font-family: 'Bebas Neue', cursive; 
+    font-size: 1.5em;
 
 
 }
@@ -35,12 +70,95 @@ a {
 
 }
 
-
-img {
-    max-width: 90%;
+p {
+    width: 80vw;
+    font-size: 1em;
+    hyphens: auto;
+    padding-bottom: 3rem;
+    margin: auto;
 
 }
 
+img {
+    max-width: 90%;
+    margin: auto;
+
+}
+
+.bio-image {
+    max-width: 70%;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+
+}
+
+.bold {
+    font-size: 1rem;
+    font-weight: bolder;
+    padding-left: 8px;
+
+
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: solid 2px rgb(215, 211, 211);
+    
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+}
+
+.port-header {
+    padding-bottom: 2rem;
+    font-size: 3rem;
+
+}
+
+h3 {
+    font-size: 1.5rem;
+
+}
+
+.phone {
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-bottom: 1em;
+
+}
+
+.footer, .header {
+    background-color: rgb(239, 246, 253);
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    width: 100vw;
+
+}
+
+.main-footer {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+
+
+}
+
+.footer {
+    padding-top: 1.5rem;
+
+}
+
+.footer-nav {
+    display: none;
+}
 
 
 
@@ -49,16 +167,128 @@ img {
   Media Queries
 ==================================== */
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
 
-   
+    ul {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin:auto;
+        width: 50%;
+        
+       }
+    
+       li {
+        background: none;
+        border: none;  
+    
+       }    
+
+    .bio {
+        display: flex;
+        flex: 1;
+        flex-direction: row-reverse;
+        margin: auto;
+        width: 95vw;        
+    }
+    .bio p {
+        width: 50%;
+        padding-bottom: 0;
+        padding-right: 1rem;
+        text-align: left;
+
+    }
+
+    .portfolio {
+        flex-direction: row;
+        width: 100%;
+        flex-wrap: wrap;
+    
+    }
+
+    .port-header{
+        width: 100%;
+
+    }
+
+    .port-list {
+        width: 50%;
 
 
+    }
 
+    .port-list p {
+        width: 75%;  
+        
+    }
 
+    #top {
+        display: none;
+
+    }
+    .main-footer {
+        display: flex;
+        justify-content: space-between;
+
+    }
+    .footer-nav {
+        display: flex;
+        width: 50%;
+        padding: 0;
+        flex: 0;
+        margin: 0;
+    }
 }
 
-@media (min-width: 1025px) {
 
-    
+@media (min-width: 1024px) {
+
+    .main-header {
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+        margin: auto;
+    }
+
+    .main-nav {
+    width: 40%;
+    flex: 0;
+    margin: 0;
+
+    }
+    .name {
+    margin:  0;
+    width: 25%;
+    align-self: center;
+    }
+
+    .port-list {
+        width: 30%;
+    }
+
+    .port-list p {
+        width: 90%;  
+        
+    }
+
+    .bio p {
+        margin: 0;
+        line-height: 1.5;
+        width: 50%;
+    }
+
+    .bio-image {
+        padding: 0;
+        margin: 0;
+        max-width: 75%;
+    }
+
+    .bio {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        justify-content: space-around;
+        margin: auto;
+    }
+
 }

@@ -12,49 +12,70 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header class="main-header">
-		<h1 class="name">Student Name</h1>
-		<ul class="main-nav">
-			<li><a href="#">Home</a></li>
-			<li><a href="#">Portfolio</a></li>
-			<li><a href="#">Contact</a></li>
-		</ul>
-	</header>
-    <div class="bio"></div>
-        <img class="bio-image" src="images/responsive-layout-profile.png" alt="A picture of Student">
-        <p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
-    </div>
-    <div class="portfolio">
-        <h2>Portfolio</h2>
-        <img class="marketing-img" src="images/portfolio-1.png" alt="Marketing Page Project">
-        <h2>Marketing Page</h2>
-        <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
-        <img class="search-img" src="images/portfolio-2.png" alt="Search Page Project">
-        <h2>Search Page</h2>
-        <p>This project searches through a specific database to find information that the user is trying to look up.</p>
-        <img class="travel-img" src="images/portfolio-3.png" alt="Travel App Project">
-        <h2>Travel App</h2>
-        <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
-        <img class="map-img" src="images/portfolio-4.png" alt="Map Project">
-        <h2>Map of Favorite Spots</h2>
-        <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
-        <img class="photo-img" src="images/portfolio-5.png" alt="Photo Gallery Project">
-        <h2>Photo Gallery</h2>
-        <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
-        <img class="calc-img" src="images/portfolio-6.png" alt="Calculator Project">
-        <h2>Calculator</h2>
-        <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
+    <nav class="header">
+        <header class="main-header">
+            <h1 class="name">Student Name</h1>
+            <ul class="main-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </header>
+        <div class="bio">
+            <img class="bio-image" src="images/responsive-layout-profile.png" alt="A picture of Student">
+            <p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
+        </div>
+    </nav>
+    <div class="portfolio" id="portfolio">
+        <h2 class="port-header">Portfolio</h2>
+        <div id="marketing" class="port-list">
+            <img class="marketing-img" src="images/portfolio-1.png" alt="Marketing Page Project">
+            <h2>Marketing Page</h2>
+            <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
+        </div>
+        <div id="search" class="port-list">
+            <img class="search-img" src="images/portfolio-2.png" alt="Search Page Project">
+            <h2>Search Page</h2>
+            <p>This project searches through a specific database to find information that the user is trying to look up.</p>
+        </div>
+        <div id="travel" class="port-list">
+            <img class="travel-img" src="images/portfolio-3.png" alt="Travel App Project">
+            <h2>Travel App</h2>
+            <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
+        </div>    
+        <div id="map" class="port-list">
+            <img class="map-img" src="images/portfolio-4.png" alt="Map Project">
+            <h2>Map of Favorite Spots</h2>
+            <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
+        </div>
+        <div id="gallery" class="port-list">
+            <img class="photo-img" src="images/portfolio-5.png" alt="Photo Gallery Project">
+            <h2>Photo Gallery</h2>
+            <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
+        </div>
+        <div id="calc" class="port-list">
+            <img class="calc-img" src="images/portfolio-6.png" alt="Calculator Project">
+            <h2>Calculator</h2>
+            <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
+        </div>
     </div>
 
-    <h3>Contact</h3>
-    <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
-    <p>Phone</p>
-    <p>Email</p>
+    <div class="footer">
+        <h3 id="contact">Contact</h3>
+        <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
+        <p class="phone">Phone <b class="bold">+1 (111) 555-1234</b></p>
+        <p class="email">Email <b class="bold">email@yoursite.com</b></p>
 
-    
-    <footer class="main-footer">
-        <h3>Student Name</h3>
-        <h3>Back to Top</h3>
-    </footer>
+        
+        <footer class="main-footer">
+            <h3 id="footer-name">Student Name</h3>
+            <h3 id="top"><a href="#">Back to Top</a></h3>
+            <ul class="footer-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </footer>
+    </div> 
 </body>
 </html>
